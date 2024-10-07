@@ -1,3 +1,5 @@
+$onlyIf[$var[m2]!=;]
+
 $if[$or[$var[m2]==bal;$var[m2]==atm;$var[m2]==saldo]==true]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/economia/bal.ruby
 
