@@ -58,7 +58,7 @@ $var[dev;$splitText[2]]
 $setUserVar[bot;0/$splitText[2]/$splitText[3]/$splitText[4]/$splitText[5]/$getTimestamp;$var[id]]
 
 $textSplit[$getUserVar[dev;$var[dev]];/]
-$setUserVar[dev;0/$splitText[2]$if[$splitText[3]!=]/$splitText[3]$endif$if[$splitText[4]!=]/$splitText[4]$endif$if[$splitText[5]!=]/$splitText[5]$endif$if[$splitText[6]!=]/$splitText[6]$endif$if[$splitText[7]!=]/$splitText[7]$endif$if[$splitText[8]!=]/$splitText[8]$endif$if[$splitText[9]!=]/$splitText[9]$endif$if[$splitText[10]!=]/$splitText[10]$endif$if[$splitText[11]!=]/$splitText[11]$endif$if[$splitText[12]!=]/$splitText[12]$endif;$var[id]]
+$setUserVar[dev;0/$splitText[2]$replaceText[$replaceText[$getUserVar[dev;$var[dev]];$splitText[1]/$splitText[2];;-1];/$var[id];;-1];$var[dev]]
 
 $textSplit[$getServerVar[queue];/]
 $var[index;$if[$splitText[1]==$var[id]]1$elseif[$splitText[2]==$var[id]]2$elseif[$splitText[3]==$var[id]]3$elseif[$splitText[4]==$var[id]]4$elseif[$splitText[5]==$var[id]]5$elseif[$splitText[6]==$var[id]]6$elseif[$splitText[7]==$var[id]]7$elseif[$splitText[8]==$var[id]]8$elseif[$splitText[9]==$var[id]]9$elseif[$splitText[10]==$var[id]]10$elseif[$splitText[11]==$var[id]]11$elseif[$splitText[12]==$var[id]]12$endif]
