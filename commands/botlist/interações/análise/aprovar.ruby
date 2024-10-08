@@ -47,7 +47,7 @@ $removeAllComponents[$messageID] $var[id;$splitText[4]] $ephemeral
 $editMessage[$channelID;$messageID;( <:CERTO:1292312954619826226> › <@$authorID>, análise concluída com sucesso! A aplicação **$username[$var[id]]** foi reprovada.]
 ( <:CERTO:1292312954619826226> › <@$authorID>, a aplicação **$username[$var[id]]** foi retirada da lista de espera e saiu do servidor com **sucesso**!
 
-$sendEmbedMessage[$textSplit[$getServerVar[canais];/]$splitText[4];<@$textSplit[$getUserVar[bot;$var[id]];/]$splitText[2]>;<:errado:1292312941030277200>  - Aplicação Reprovada ( Falha );;
+$sendEmbedMessage[$textSplit[$getServerVar[canais];/]$splitText[4];<@$textSplit[$getUserVar[bot;$var[id]];/]$splitText[2]>;<:errado:1292312941030277200> - Aplicação Reprovada ( Falha );;
 > Parabéns **_$username[$textSplit[$getUserVar[bot;$var[id]];/]$splitText[2]]_** sua aplicação **_$username[$var[id]]_** foi ***_Rprovada_***!
 - **Nota:**
 ```$input[1]```
@@ -65,6 +65,7 @@ $var[index;$if[$splitText[1]==$var[id]]1$elseif[$splitText[2]==$var[id]]2$elseif
 $removeSplitTextElement[$var[index]]
 $setUserVar[dev;$replaceText[$getUserVar[dev;$var[dev]];/$var[id];;1];$var[dev]]
 
+$onlyBotPerms[kick;( <:errado:1292312941030277200> › <@$authorID>, eu não possuo permissão de expulsar membros então infelismente o bot não saiu do servidor.]
 $kick[$var[id];Foi reprovado pelo verificador: $username]
 
 $endif
