@@ -14,7 +14,7 @@ $endif
 
 $if[$textSplit[$customID;/]$and[$splitText[1]==an;$splitText[2]==aprovar;$splitText[3]==modal;$splitText[5]==$authorID]==true]
 
-$removeButtons[$messageID] $var[id;$splitText[4]] $ephemeral
+$removeAllComponents[$messageID] $var[id;$splitText[4]] $ephemeral
 $editMessage[$channelID;$messageID;( <:CERTO:1292312954619826226> › <@$authorID>, análise concluída com sucesso! A aplicação **$username[$var[id]]** foi aprovada.]
 ( <:CERTO:1292312954619826226> › <@$authorID>, a aplicação **$username[$var[id]]** foi retirada da lista de espera e ganhou o cargos <@&$textSplit[$getServerVar[cargos];/]$splitText[3]> com **sucesso**!
 
@@ -40,7 +40,7 @@ $endif
 
 $if[$textSplit[$customID;/]$and[$splitText[1]==an;$splitText[2]==reprovar;$splitText[3]==modal;$splitText[5]==$authorID]==true]
 
-$removeButtons[$messageID] $var[id;$splitText[4]] $ephemeral
+$removeAllComponents[$messageID] $var[id;$splitText[4]] $ephemeral
 $editMessage[$channelID;$messageID;( <:CERTO:1292312954619826226> › <@$authorID>, análise concluída com sucesso! A aplicação **$username[$var[id]]** foi reprovada.]
 ( <:CERTO:1292312954619826226> › <@$authorID>, a aplicação **$username[$var[id]]** foi retirada da lista de espera e saiu do servidor com **sucesso**!
 
