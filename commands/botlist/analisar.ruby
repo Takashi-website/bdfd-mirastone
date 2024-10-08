@@ -2,7 +2,7 @@ $onlyIf[$guildID!=;( <:errado:1292312941030277200> › <@$authorID>, esse comand
 $onlyIf[$hasRole[$authorID;$textSplit[$getServerVar[cargos];/]$splitText[5]]==true;( <:errado:1292312941030277200> › <@$authorID>, você não é um `verificador` para utilizar esse comando.]
 $onlyIf[$mentioned[1]!=;( <:errado:1292312941030277200> › <@$authorID>, mencione uma aplicação para ser análisada.]
 $onlyIf[$isBot[$mentioned[1]]==true;( <:errado:1292312941030277200> › <@$authorID>, mencione uma aplicação válida.]
-$onlyIf[$textSplit[$getUserVar[bot;$mentioned[1]]];/]$splitText[1]==1;( <:errado:1292312941030277200> › <@$authorID>, essa aplicação já foi analisada ou não foi enviada para análise.]
+$onlyIf[$textSplit[$getUserVar[bot;$mentioned[1]];/]$splitText[1]==1;( <:errado:1292312941030277200> › <@$authorID>, essa aplicação já foi analisada ou não foi enviada para análise.]
 
 $title[( 🔬 › Análise]
 $color[$getVar[color]]
