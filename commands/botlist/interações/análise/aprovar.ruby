@@ -40,7 +40,7 @@ $roleGrant[$var[id];+$textSplit[$getServerVar[cargos];/]$splitText[3];-$textSpli
 $roleGrant[$textSplit[$getUserVar[bot;$var[id]];/]$splitText[2];+$textSplit[$getServerVar[cargos];/]$splitText[4]]
 
 $setUserVar[coin;$sum[$getUserVar[coin;$authorID];1];$authorID]
-$setUserVar[votos;$getTimestamp;$authorID]
+$setUserVar[prefix;$getTimestamp;$authorID]
 
 $textSplit[$getUserVar[bot;$var[id]];/]
 $var[name;[ $if[$slpitText[3]=true]/$endif$if[$slpitText[4]=true]$if[$slpitText[3]=true], $endif$splitText[4]$endif \] $username[$var[id]] ( by: $username[$splitText[2]] )
