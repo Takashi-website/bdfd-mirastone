@@ -8,7 +8,7 @@ $onlyIf[$textSplit[$getUserVar[bot;$var[bot]];/]$splitText[1]==2;( <:errado:1292
 $setUserVar[votos;$sum[$getUserVar[votos;$var[bot]];$if[$textSplit[$getVar[premium;$authorID];/]$splitText[2]==true]2$elseif[$getTimestamp<=$textSplit[$getVar[premium;$authorID];/]$splitText[2]]2$elseif[$getTimestamp>$textSplit[$getVar[premium;$authorID];/]$splitText[2]]1$endif];$var[bot]]
 ( 🎉 › <@$authorID> acaba de votar no incrível bot **$username[$var[bot]]**! 🗳️ Com isso, o bot agora conta com **$getUserVar[votos;$var[bot]] votos**! 🌟 Cada voto é uma demonstração de apoio e carinho para bot. Muito obrigado a todos que participam e fazem parte dessa jornada! Vamos continuar crescendo juntos e levando o **$username[$var[bot]]** a novos patamares! 🚀
 
-$sendEmbedMessage[$textSplit[$getServerVar[canais];/];<@$var[bot]>;;;
+$sendEmbedMessage[$textSplit[$getServerVar[canais]$splitText[5];/];<@$var[bot]>;Voto $if[$textSplit[$getVar[premium;$authorID];/]$splitText[2]==true]Premium$elseif[$getTimestamp<=$textSplit[$getVar[premium;$authorID];/]$splitText[2]]Premium$elseif[$getTimestamp>$textSplit[$getVar[premium;$authorID];/]$splitText[2]]$endif;;
 🎉 – <@$authorID> votou com sucesso na aplicação **$username[$var[bot]]** que agora tem **$getUserVar[votos;$var[bot]] voto(s)**!
 > Isso ajuda muito a **Aplicação** e ao **Desenvolvedor** da aplicação!;$getVar[color];;;Votado por: $username;$authorAvatar;$userAvatar[$var[bot]]]
 
