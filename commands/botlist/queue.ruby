@@ -1,8 +1,8 @@
-$onlyIf[$guildID!=;( ⛔ › <@$authorID>, esse comando só pode ser usado em servidores.]
-$onlyIf[$hasRole[$authorID;$textSplit[$getServerVar[cargos];/]$splitText[5]]==true;( ⛔ › <@$authorID>, você não é um `verificador` para utilizar esse comando.]
+$onlyIf[$guildID!=;( <:errado:1292312941030277200> › <@$authorID>, esse comando só pode ser usado em servidores.]
+$onlyIf[$hasRole[$authorID;$textSplit[$getServerVar[cargos];/]$splitText[5]]==true;( <:errado:1292312941030277200> › <@$authorID>, você não é um `verificador` para utilizar esse comando.]
 
 $textSplit[$getServerVar[queue];/]
-$onlyIf[$splitText[1]!=;( :x: › <@$authorID>, não há nenhuma aplicação na lista de espera nesse momento.]
+$onlyIf[$splitText[1]!=;( <:errado:1292312941030277200> › <@$authorID>, não há nenhuma aplicação na lista de espera nesse momento.]
 $var[w;$getTextSplitLength]
 $var[v;1] $var[id;$splitText[$var[v]]]
 $textSplit[$getUserVar[bot;$var[id]];/]
