@@ -12,14 +12,14 @@ $title[⭐ Rank Votos]
 $description[
 $var[i;1]**#0$getLeaderboardPosition[user;votos;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
 -# **$getUserVar[votos;$var[top-$var[i]]]** votos | [Me Adicione\](https://discordapp.com/oauth2/authorize?client_id=$var[top-$var[i]]&scope=bot&permissions=2146958847)
-$var[i;2]**#0$getLeaderboardPosition[user;votos;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
--# **$getUserVar[votos;$var[top-$var[i]]]** votos | [Me Adicione\](https://discordapp.com/oauth2/authorize?client_id=$var[top-$var[i]]&scope=bot&permissions=2146958847)
-$var[i;3]**#0$getLeaderboardPosition[user;votos;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
--# **$getUserVar[votos;$var[top-$var[i]]]** votos | [Me Adicione\](https://discordapp.com/oauth2/authorize?client_id=$var[top-$var[i]]&scope=bot&permissions=2146958847)
-$var[i;4]**#0$getLeaderboardPosition[user;votos;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
--# **$getUserVar[votos;$var[top-$var[i]]]** votos | [Me Adicione\](https://discordapp.com/oauth2/authorize?client_id=$var[top-$var[i]]&scope=bot&permissions=2146958847)
-$var[i;5]**#0$getLeaderboardPosition[user;votos;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
--# **$getUserVar[votos;$var[top-$var[i]]]** votos | [Me Adicione\](https://discordapp.com/oauth2/authorize?client_id=$var[top-$var[i]]&scope=bot&permissions=2146958847)
+$var[i;2]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[user;votos;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
+-# **$getUserVar[votos;$var[top-$var[i]]]** votos | [Me Adicione\](https://discordapp.com/oauth2/authorize?client_id=$var[top-$var[i]]&scope=bot&permissions=2146958847)$endif
+$var[i;3]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[user;votos;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
+-# **$getUserVar[votos;$var[top-$var[i]]]** votos | [Me Adicione\](https://discordapp.com/oauth2/authorize?client_id=$var[top-$var[i]]&scope=bot&permissions=2146958847)$endif
+$var[i;4]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[user;votos;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
+-# **$getUserVar[votos;$var[top-$var[i]]]** votos | [Me Adicione\](https://discordapp.com/oauth2/authorize?client_id=$var[top-$var[i]]&scope=bot&permissions=2146958847)$endif
+$var[i;5]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[user;votos;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
+-# **$getUserVar[votos;$var[top-$var[i]]]** votos | [Me Adicione\](https://discordapp.com/oauth2/authorize?client_id=$var[top-$var[i]]&scope=bot&permissions=2146958847)$endif
 ]
 
 $endif
