@@ -21,6 +21,9 @@ https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main
 $elseif[$or[$var[m2]==p;$var[m2]==perfil;$var[m2]==profile]==true]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/botlist/perfil.ruby
 
+$elseif[$or[$var[m2]==r;$var[m2]==top;$var[m2]==rank]==true]
+https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/botlist/rank.ruby
+
 $elseif[$or[$var[m2]==setprefix;$var[m2]==prefix;$var[m2]==set-prefix]==true]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/modera%C3%A7%C3%A3o/set-prefix.ruby
 
