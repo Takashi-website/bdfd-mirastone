@@ -74,7 +74,7 @@ $setServerVar[queue;$splitText[1]$if[$splitText[2]!=]/$splitText[2]$endif$if[$sp
 $setUserVar[dev;$replaceText[$getUserVar[dev;$var[dev]];/$var[id];;1];$var[dev]]
 
 $setUserVar[coin;$sum[$getUserVar[coin;$authorID];1];$authorID]
-$setUserVar[votos;$getTimestamp;$authorID]
+$setUserVar[prefix;$getTimestamp;$authorID]
 
 $onlyBotPerms[kick;( <:errado:1292312941030277200> › <@$authorID>, eu não possuo permissão de expulsar membros então infelismente o bot não saiu do servidor.]
 $kick[$var[id];Foi reprovado pelo verificador: $username]
