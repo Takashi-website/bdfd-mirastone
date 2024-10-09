@@ -3,7 +3,7 @@ $onlyIf[$var[m2]!=;]
 $if[$or[$var[m2]==bal;$var[m2]==atm;$var[m2]==saldo]==true]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/economia/bal.ruby
 
-$if[$or[$var[m2]==daily;$var[m2]==resgatar;$var[m2]==diária;$var[m2]==diaria]==true]
+$elseif[$or[$var[m2]==daily;$var[m2]==resgatar;$var[m2]==diária;$var[m2]==diaria]==true]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/economia/daily.ruby
 
 $elseif[$var[m2]==botlist]
