@@ -19,7 +19,7 @@ $elseif[$or[$var[m2]==v;$var[m2]==votar;$var[m2]==vote]==true]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/botlist/votar.js
 
 $elseif[$or[$var[m2]==p;$var[m2]==prefil;$var[m2]==profile]==true]
-https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/botlist/perfil.js
+https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/botlist/perfil.ruby
 
 $elseif[$or[$var[m2]==setprefix;$var[m2]==prefix;$var[m2]==set-prefix]==true]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/modera%C3%A7%C3%A3o/set-prefix.ruby
