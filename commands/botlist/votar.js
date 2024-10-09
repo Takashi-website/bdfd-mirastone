@@ -1,7 +1,7 @@
 $onlyIf[$guildID!=;( <:errado:1292312941030277200> › <@$authorID>, esse comando só pode ser usado em servidores.]
 
-$var[bot;$findUser[$replaceText[$message[2]]]]
-$onlyIf[$mentioned[1]!=;( <:errado:1292312941030277200> › <@$authorID>, mencione apenas aplicações para votar.]
+$var[bot;$findUser[$message[2]]]
+$onlyIf[$message[2]!=;( <:errado:1292312941030277200> › <@$authorID>, mencione apenas aplicações para votar.]
 $onlyIf[$isBot[$var[bot]]==true;( <:errado:1292312941030277200> › <@$authorID>, mencione uma aplicação válida.]
 $onlyIf[$textSplit[$getUserVar[bot;$var[bot]];/]$splitText[1]==2;( <:errado:1292312941030277200> › <@$authorID>, essa aplicação anida não foi análisada.]
 
