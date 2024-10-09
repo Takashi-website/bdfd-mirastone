@@ -39,6 +39,9 @@ $setServerVar[queue;$splitText[1]$if[$splitText[2]!=]/$splitText[2]$endif$if[$sp
 $roleGrant[$var[id];+$textSplit[$getServerVar[cargos];/]$splitText[3];-$textSplit[$getServerVar[cargos];/]$splitText[2]]
 $roleGrant[$textSplit[$getUserVar[bot;$var[id]];/]$splitText[2];+$textSplit[$getServerVar[cargos];/]$splitText[4]]
 
+$setUserVar[coin;$sum[$getUserVar[coin;$authorID];1];$authorID]
+$setUserVar[votos;$getTimestamp;$authorID]
+
 $textSplit[$getUserVar[bot;$var[id]];/]
 $var[name;[ $if[$slpitText[3]=true]/$endif$if[$slpitText[4]=true]$if[$slpitText[3]=true], $endif$splitText[4]$endif \] $username[$var[id]] ( by: $username[$splitText[2]] )
 $changeUsernameWithID[$var[id];$cropText[$var[name];29;...]]
@@ -67,7 +70,11 @@ $setUserVar[dev;0/$splitText[2]$replaceText[$replaceText[$getUserVar[dev;$var[de
 $textSplit[$getServerVar[queue];/]
 $var[index;$if[$splitText[1]==$var[id]]1$elseif[$splitText[2]==$var[id]]2$elseif[$splitText[3]==$var[id]]3$elseif[$splitText[4]==$var[id]]4$elseif[$splitText[5]==$var[id]]5$elseif[$splitText[6]==$var[id]]6$elseif[$splitText[7]==$var[id]]7$elseif[$splitText[8]==$var[id]]8$elseif[$splitText[9]==$var[id]]9$elseif[$splitText[10]==$var[id]]10$elseif[$splitText[11]==$var[id]]11$elseif[$splitText[12]==$var[id]]12$endif]
 $removeSplitTextElement[$var[index]]
+$setServerVar[queue;$splitText[1]$if[$splitText[2]!=]/$splitText[2]$endif$if[$splitText[3]!=]/$splitText[3]$endif$if[$splitText[4]!=]/$splitText[4]$endif$if[$splitText[5]!=]/$splitText[5]$endif$if[$splitText[6]!=]/$splitText[6]$endif$if[$splitText[7]!=]/$splitText[7]$endif$if[$splitText[8]!=]/$splitText[8]$endif$if[$splitText[9]!=]/$splitText[9]$endif$if[$splitText[10]!=]/$splitText[10]$endif$if[$splitText[11]!=]/$splitText[11]$endif$if[$splitText[12]!=]/$splitText[12]$endif]
 $setUserVar[dev;$replaceText[$getUserVar[dev;$var[dev]];/$var[id];;1];$var[dev]]
+
+$setUserVar[coin;$sum[$getUserVar[coin;$authorID];1];$authorID]
+$setUserVar[votos;$getTimestamp;$authorID]
 
 $onlyBotPerms[kick;( <:errado:1292312941030277200> › <@$authorID>, eu não possuo permissão de expulsar membros então infelismente o bot não saiu do servidor.]
 $kick[$var[id];Foi reprovado pelo verificador: $username]
