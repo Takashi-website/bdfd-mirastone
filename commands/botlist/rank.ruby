@@ -38,15 +38,15 @@ $color[$getVar[color]]
 $title[⭐ Rank Verificadores]
 $description[
 $var[i;1]**#0$getLeaderboardPosition[user;coin;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
--# **$getUserVar[coin;$var[top-$var[i]]]** análises | Ultima análise em <t:$getUserVar[votos;$var[top-$var[i]]]:f>
+-# **$getUserVar[coin;$var[top-$var[i]]]** análises | Ultima análise em <t:$getUserVar[prefix;$var[top-$var[i]]]:f>
 $var[i;2]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[user;coin;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
--# **$getUserVar[coin;$var[top-$var[i]]]** análises | Ultima análise em <t:$getUserVar[votos;$var[top-$var[i]]]:f>$endif
+-# **$getUserVar[coin;$var[top-$var[i]]]** análises | Ultima análise em <t:$getUserVar[prefix;$var[top-$var[i]]]:f>$endif
 $var[i;3]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[user;coin;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
--# **$getUserVar[coin;$var[top-$var[i]]]** análises | Ultima análise em <t:$getUserVar[votos;$var[top-$var[i]]]:f>$endif
+-# **$getUserVar[coin;$var[top-$var[i]]]** análises | Ultima análise em <t:$getUserVar[prefix;$var[top-$var[i]]]:f>$endif
 $var[i;4]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[user;coin;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
--# **$getUserVar[coin;$var[top-$var[i]]]** análises | Ultima análise em <t:$getUserVar[votos;$var[top-$var[i]]]:f>$endif
+-# **$getUserVar[coin;$var[top-$var[i]]]** análises | Ultima análise em <t:$getUserVar[prefix;$var[top-$var[i]]]:f>$endif
 $var[i;5]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[user;coin;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
--# **$getUserVar[coin;$var[top-$var[i]]]** análises | Ultima análise em <t:$getUserVar[votos;$var[top-$var[i]]]:f>$endif
+-# **$getUserVar[coin;$var[top-$var[i]]]** análises | Ultima análise em <t:$getUserVar[prefix;$var[top-$var[i]]]:f>$endif
 ]
 
 $endif
