@@ -33,6 +33,9 @@ https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main
 $elseif[$or[$var[m2]==help;$var[m2]==ajuda;$var[m2]==cmds]==true]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/utilidade/ajuda.ruby
 
+$elseif[$var[m2]==avatar]
+https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/utilidade/avatar.ruby
+
 $else
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/redrects/nada.ruby
 $endif
