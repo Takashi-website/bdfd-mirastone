@@ -1,4 +1,4 @@
-$onlyIf[$getTimestamp>=$textSplit[$getVar[daily;$authorID];/]$splitText[1];( ⛔ › <@$authorID>, você já resgatou seu daily hoje! Volte amanhã depois das <t:$splitText[1]:t> para resgatar novamente.]
+$onlyIf[$getTimestamp>=$textSplit[$getVar[daily;$authorID];/]$splitText[1];( <a:Timer:1293529296194768896> › <@$authorID>, você já resgatou seu daily hoje! Volte amanhã depois das <t:$splitText[1]:t> para resgatar novamente.]
 
 $var[cd-daily;$calculate[((24-$hour)*3600)+((60-$minute)*60)+($second)+$getTimestamp+7200]]
 $var[valor;$random[10;100]]
