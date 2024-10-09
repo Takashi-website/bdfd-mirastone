@@ -21,7 +21,7 @@ $var[top-3;$getLeaderboardValue[user;votos;asc;5;id]]
 $if[$or[$var[bot]==$var[top-1];$var[bot]==$var[top-2];$var[bot]==$var[top-3]]==true]
 $onlyBotPerms[manageroles;;( <:errado:1292312941030277200> › <@$authorID>, eu não possuo permissão de **Gerencias Cargos** para dar o cargo de **Top 3 Bots** para a aplicação.]
 
-$if[$var[bot]==$var[top-1]] $roleGrant[$var[top-1];+1287406572267372554] $roleGrant[$var[top-4];+1287406572267372554] $roleGrant[$var[top-5];+1287406572267372554] $endif
-$if[$var[bot]==$var[top-2]] $roleGrant[$var[top-2];+1287406572267372554] $roleGrant[$var[top-4];+1287406572267372554] $roleGrant[$var[top-5];+1287406572267372554] $endif
-$if[$var[bot]==$var[top-3]] $roleGrant[$var[top-3];+1287406572267372554] $roleGrant[$var[top-4];+1287406572267372554] $roleGrant[$var[top-5];+1287406572267372554] $endif
+$if[$var[bot]==$var[top-1]] $roleGrant[$var[top-1];+1287406572267372554] $endif
+$if[$var[bot]==$var[top-2]] $roleGrant[$var[top-2];+1287406572267372554] $endif
+$if[$var[bot]==$var[top-3]] $roleGrant[$var[top-3];+1287406572267372554] $endif
 $endif
