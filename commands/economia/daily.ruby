@@ -10,4 +10,4 @@ $thumbnail[$userAvatar[$authorID]]
 $color[$getVar[color]]
 
 $setVar[daily;$var[cd-daily]/$splitText[2];$authorID]
-$setVar[slot;$sum[$textSplit[$getVar[slot;$authorID];/]$splitText[1];$var[valor]]/$splitText[2];$authorID]
+$setVar[coin;$sum[$getVar[coin;$authorID];$var[valor]];$authorID]
