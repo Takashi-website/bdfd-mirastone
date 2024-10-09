@@ -20,4 +20,7 @@ $textSplit[$getUserVar[dev;$var[id]];/]
 $var[desc;$if[$getVar[desc;$var[id]]!=]$getVar[desc;$var[id]]$elseif[$getVar[desc;$var[id]]==]Troque a sua descrição utilizando o botão abaixo.$endif]
 
 https://mirastone.vercel.app/api/perfil?background=&username=$url[encode;$username[$var[id]]]&description=$url[encode;$var[desc]]&avatar=$url[encode;$userAvatar[$var[id]]]&coins=$url[encode;$numberSeparator[$getVar[coin;$var[id]]]]&botImages=$url[encode;$if[$splitText[3]!=]$userAvatar[$splitText[3]]$endif$if[$splitText[4]!=],$userAvatar[$splitText[4]]$endif$if[$splitText[5]!=],$userAvatar[$splitText[5]]$endif$if[$splitText[6]!=],$userAvatar[$splitText[6]]$endif$if[$splitText[7]!=],$userAvatar[$splitText[7]]$endif$if[$splitText[8]!=],$userAvatar[$splitText[8]]$endif$if[$splitText[9]!=],$userAvatar[$splitText[9]]$endif$if[$splitText[10]!=],$userAvatar[$splitText[10]]$endif$if[$splitText[11]!=],$userAvatar[$splitText[11]]$endif$if[$splitText[12]!=],$userAvatar[$splitText[12]]$endif]
+$if[$var[id]==$authorID]
+
+$endif
 $endif
