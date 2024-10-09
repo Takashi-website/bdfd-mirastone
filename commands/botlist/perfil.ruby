@@ -1,7 +1,7 @@
 $var[id;$findUser[$message[2]]]
 
 $if[$isBot[$var[id]]==true]
-$onlyIf[$textSplit[$getUserVar[bot;$var[bot]];/]$splitText[1]==2;( <:errado:1292312941030277200> › <@$authorID>, essa aplicação anida não foi análisada.]
+$onlyIf[$textSplit[$getUserVar[bot;$var[id]];/]$splitText[1]==2;( <:errado:1292312941030277200> › <@$authorID>, essa aplicação anida não foi análisada.]
 
 $textSplit[$getUserVar[bot;$var[id]];/]
 $title[$username[$var[id]]]
