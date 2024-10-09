@@ -39,6 +39,10 @@ $setServerVar[queue;$splitText[1]$if[$splitText[2]!=]/$splitText[2]$endif$if[$sp
 $roleGrant[$var[id];+$textSplit[$getServerVar[cargos];/]$splitText[3];-$textSplit[$getServerVar[cargos];/]$splitText[2]]
 $roleGrant[$textSplit[$getUserVar[bot;$var[id]];/]$splitText[2];+$textSplit[$getServerVar[cargos];/]$splitText[4]]
 
+$textSplit[$getUserVar[bot;$var[id]];/]
+$var[name;[ $if[$slpitText[3]=true]/$endif$if[$slpitText[4]=true]$if[$slpitText[3]=true], $endif$splitText[4]$endif \] $username[$var[id]] ( by: $username[$splitText[2]] )
+$changeUsernameWithID[$var[id];$cropText[$var[name];29;...]]
+
 $endif
 
 $if[$textSplit[$customID;/]$and[$splitText[1]==an;$splitText[2]==reprovar;$splitText[3]==modal;$splitText[5]==$authorID]==true]
