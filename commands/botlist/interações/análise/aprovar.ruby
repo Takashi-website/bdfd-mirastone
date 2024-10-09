@@ -43,7 +43,7 @@ $setUserVar[coin;$sum[$getUserVar[coin;$authorID];1];$authorID]
 $setUserVar[prefix;$getTimestamp;$authorID]
 
 $textSplit[$getUserVar[bot;$var[id]];/]
-$var[name;[ $if[$slpitText[3]=true]/$endif$if[$slpitText[4]=true]$if[$slpitText[3]=true], $endif$splitText[4]$endif \] $username[$var[id]] ( by: $username[$splitText[2]] )
+$var[name;[ $splitText[4] \] $username[$var[id]] ( by: $username[$splitText[2]] )]
 $changeUsernameWithID[$var[id];$cropText[$var[name];29;...]]
 
 $endif
