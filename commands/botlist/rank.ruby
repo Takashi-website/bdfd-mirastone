@@ -1,4 +1,5 @@
 $var[type;$toLowercase[$message[2]]]
+$onlyIf[$var[type]!=;( <:errado:1292312941030277200> › <@$authorID>, você esqueceu de especificar o tipo do rank que quer ver.]
 
 $if[$or[$var[type]==v;$var[type]==vote;$var[type]==votos;$var[type]==voto]==true]
 
