@@ -1,6 +1,6 @@
 $title[( 📕 › Lista Comandos Mirastone]
 $description[<:mt_Point:1292221929444475044> Olá, $nickname. Seja bem-vindo à minha seção de ajuda! Aqui você terá uma visão completa dos meus comandos e poderá explorar todas as minhas funcionalidades de forma clara e detalhada.]
-$addField[💸 | Economia;`bal`, `daily`, `rank m`]
+$addField[💸 | Economia;`bal`, `daily`, `rank m`, `coinflip`]
 $addField[🤖 | Botlist;`botlist`, `queue`, `addbot`, `análisar`, `votar`, `top v`, `top an`]
 $addField[✨ | Utilidade;`ajuda`, `avatar`, `botinfo`, `ping`, `perfil`]
 $addField[🎟️ | Ticket;`ticket`]
