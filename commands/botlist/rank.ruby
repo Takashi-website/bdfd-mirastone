@@ -50,3 +50,28 @@ $var[i;5]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[user;coin;desc;$var
 ]
 
 $endif
+
+$if[$or[$var[type]==m;$var[type]==coin;$var[type]==miragolds;$var[type]==atm]==true]
+
+$var[top-1;$getLeaderboardValue[globalUser;coin;asc;1;id]]
+$var[top-2;$getLeaderboardValue[globalUser;coin;asc;2;id]]
+$var[top-3;$getLeaderboardValue[globalUser;coin;asc;3;id]]
+$var[top-4;$getLeaderboardValue[globalUser;coin;asc;4;id]]
+$var[top-5;$getLeaderboardValue[globalUser;coin;asc;5;id]]
+
+$color[$getVar[color]]
+$title[⭐ Rank Miragolds]
+$description[
+$var[i;1]**#0$getLeaderboardPosition[globalUser;coin;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
+-# **$getVar[coin;$var[top-$var[i]]]** miracoins | 
+$var[i;2]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[globalUser;coin;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
+-# **$getVar[coin;$var[top-$var[i]]]** miracoins | $endif
+$var[i;3]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[user;globalUser;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
+-# **$getVar[coin;$var[top-$var[i]]]** miracoins | $endif
+$var[i;4]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[globalUser;coin;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
+-# **$getVar[coin;$var[top-$var[i]]]** miracoins | $endif
+$var[i;5]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[globalUser;coin;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
+-# **$getVar[coin;$var[top-$var[i]]]** miracoins | $endif
+]
+
+$endif
