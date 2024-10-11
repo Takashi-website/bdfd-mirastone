@@ -6,6 +6,9 @@ https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main
 $elseif[$or[$var[m2]==daily;$var[m2]==resgatar;$var[m2]==diária;$var[m2]==diaria]==true]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/economia/daily.ruby
 
+$elseif[$or[$var[m2]==coinflip;$var[m2]==cara-coroua;$var[m2]==cc;$var[m2]==coin]==true]
+https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/economia/coinflip.ruby
+
 $elseif[$var[m2]==botlist]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/botlist/botlist.ruby
 
