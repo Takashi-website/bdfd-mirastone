@@ -21,5 +21,5 @@ $addButton[no;ticket/outros/$authorID;Outros;primary;no;<:menudotsvertical:12941
 $endif
 
 $if[$or[$toLowercase[$message[2]]==criar;$toLowercase[$message[2]]==create]==true]
-( <a:Timer:1293529296194768896> › <@$authorID>, este comando está em desenvolvimento, veja mais informações clicando [aqui\](https://discord.gg/x6EwK7S8Xh )!
+( <a:Timer:1293529296194768896> › <@$authorID>, este comando está em desenvolvimento, veja mais informações clicando [aqui](https://discord.gg/x6EwK7S8Xh )!
 $endif
