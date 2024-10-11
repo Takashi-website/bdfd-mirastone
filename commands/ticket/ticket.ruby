@@ -1,4 +1,4 @@
-$onlyIf[955180478305034250==$authorID;( <:errado:1292312941030277200> › <@$authorID>, esse comando está em desenvolvimento veja atualizações clicando [aqui\](https://discord.gg/WbdWuPh3MF )!]
+$onlyIf[$or[955180478305034250==$authorID;1264206060986564630==$authorID]==true;( <:errado:1292312941030277200> › <@$authorID>, esse comando está em desenvolvimento veja atualizações clicando [aqui\](https://discord.gg/WbdWuPh3MF )!]
 
 $onlyIf[$guildID!=;( <:errado:1292312941030277200> › <@$authorID>, esse comando só pode ser usado em servidores.]
 $onlyPerms[admin;( <:errado:1292312941030277200> › <@$authorID>, infelizmente você não tem permissão de `administrador` para utilizar esse coamando!]
