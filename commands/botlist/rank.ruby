@@ -66,7 +66,7 @@ $var[i;1]**#0$getLeaderboardPosition[globalUser;coin;desc;$var[top-$var[i]]]** -
 -# **$getVar[coin;$var[top-$var[i]]]** miracoins | 
 $var[i;2]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[globalUser;coin;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
 -# **$getVar[coin;$var[top-$var[i]]]** miracoins | $endif
-$var[i;3]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[user;globalUser;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
+$var[i;3]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[globalUser;coin;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
 -# **$getVar[coin;$var[top-$var[i]]]** miracoins | $endif
 $var[i;4]$if[$var[top-$var[i]]!=]**#0$getLeaderboardPosition[globalUser;coin;desc;$var[top-$var[i]]]** - **$username[$var[top-$var[i]]]**
 -# **$getVar[coin;$var[top-$var[i]]]** miracoins | $endif
