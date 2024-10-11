@@ -3,7 +3,7 @@ $description[<:mt_Point:1292221929444475044> Olá, $nickname. Seja bem-vindo à 
 $addField[💸 | Economia;`bal`, `daily`, `rank m`, `coinflip`]
 $addField[🤖 | Botlist;`botlist`, `queue`, `addbot`, `análisar`, `votar`, `top v`, `top an`]
 $addField[✨ | Utilidade;`ajuda`, `avatar`, `botinfo`, `ping`, `perfil`]
-$addField[🎟️ | Ticket;`ticket`]
+$addField[🎟️ | Ticket;`ticket config`, `ticket criar`]
 $addField[🛡️ | Moderação;`setprefix`]
 $footer[Meu prefixo neste servidor é "$var[prefix]"]
 $color[$getVar[color]]
