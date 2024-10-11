@@ -39,6 +39,9 @@ https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main
 $elseif[$or[$var[m2]==infobot;$var[m2]==bi;$var[m2]==botinfo]==true]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/utilidade/botinfo.ruby
 
+$elseif[$or[$var[m2]==ping;$var[m2]==pong;$var[m2]==ms]==true]
+https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/utilidade/botinfo.ruby
+
 $elseif[$var[m2]==avatar]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/utilidade/avatar.ruby
 
