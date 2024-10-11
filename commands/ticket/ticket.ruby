@@ -1,15 +1,16 @@
-$onlyIf[$guildID!=;( ⛔ › <@$authorID>, este comando só pode ser executado em **servidores**.]
-$onlyPerms[admin;( ⛔ › <@$authorID>, você tem que possuir a permissão de **administrador** para utlizar esse comando.]
+$onlyIf[$guildID!=;( <:errado:1292312941030277200> › <@$authorID>, esse comando só pode ser usado em servidores.]
+$onlyPerms[admin;( <:errado:1292312941030277200> › <@$authorID>, infelizmente você não tem permissão de `administrador` para utilizar esse coamando!]
 
-$title[( 📂 › $username[$botID] - Ticket]
-$thumbnail[$serverIcon]
-$color[$getVar[color]]
+$title[Configuração do Sistema de Ticket]
+$addField[Configurar Canais;- Defina os canais específicos onde os tickets serão abertos, garantindo uma organização eficiente das solicitações e problemas dos membros.]
+$addField[Configurar Cargos ;- Atribua cargos específicos que terão acesso aos tickets, como a equipe de suporte ou moderadores, para agilizar o atendimento e solução de problemas.]
+$addField[Configurar Mensagens;- Ajuste mensagens automáticas para recebimento de tickets, respostas padrão e fechamento de tickets, garantindo uma comunicação clara e eficiente com os usuários.]
+$addField[Outros;- Personalize outras funcionalidades do sistema de ticket, como categorias de tickets, templates de respostas e integração com sistemas externos para uma gestão mais completa.]
 
-$description[> Olá, bem-vindo ao painel de configuração do sistema de **Tickets** do **$username[$botID]**! Este comando vai te guiar por todas as etapas necessárias para configurar os canais e cargos relacionados ao sistema de tickets, além de algumas outras opções adicionais.
-- Premium: ``$if[$textSplit[$getServerVar[premium];/]$splitText[1]==true]Sim ( Permanente )$elseif[$getTimestamp<=$textSplit[$getServerVar[premium];/]$splitText[1]]Sim$elseif[$getTimestamp>$textSplit[$getServerVar[premium];/]$splitText[1]]Não$endif``]
+$image[https://mirastone.vercel.app/images/banners/setup_ticket.png]
+$color[#5b64f3]
 
-$var[id;config/ticket/$authorID]
-$newSelectMenu[$var[id];1;1;Selecione uma opção]
-$addSelectMenuOption[$var[id];( 📚 › Configurar Canais;canais;Configure os canais relacionados ao tickets.;no]
-$addSelectMenuOption[$var[id];( ⭐ › Configurar Cargos;cargos;Configure os cargos relacionados ao tickets.;no]
-$addSelectMenuOption[$var[id];( 🛠️ › Outros Sistemas;sistemas;Configure outros sistemas relacionados ao tickets.;no]
+$addButton[no;ticket/canais/$authorID;Configurar Canais;primary;no;<:hastag:1294115110310117456>]
+$addButton[no;ticket/cargos/$authorID;Configurar Cargos;primary;no;<:user:1294116672403410955>]
+$addButton[no;ticket/mensagens/$authorID;Configurar Mensagens;primary;no;<:notebook:1294115108384935936>]
+$addButton[no;ticket/outros/$authorID;Outros;primary;no;<:menudotsvertical:1294115102496260218>]
