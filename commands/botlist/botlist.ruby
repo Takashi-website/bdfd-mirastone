@@ -1,4 +1,5 @@
-$nomention
+$onlyForIDs[1264206060986564630;( <a:Timer:1293529296194768896> › <@$authorID>, este comando está em desenvolvimento, veja mais informações clicando [aqui\](https://discord.gg/x6EwK7S8Xh )!]
+
 $onlyIf[$guildID!=;( ⛔ › <@$authorID>, utilize meus comandos em um servidor!]
 $onlyPerms[admin;( ⛔ › <@$authorID>, infelizmente você não tem permissão de `administrador` para utilizar esse coamndo!]
 
