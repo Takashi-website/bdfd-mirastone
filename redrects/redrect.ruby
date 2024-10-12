@@ -48,6 +48,9 @@ https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main
 $elseif[$or[$var[m2]==infoserver;$var[m2]==si;$var[m2]==serverinfo]==true]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/utilidade/serverinfo.ruby
 
+$elseif[$or[$var[m2]==infouser;$var[m2]==ui;$var[m2]==userinfo]==true]
+https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/utilidade/userinfo.ruby]
+
 $elseif[$or[$var[m2]==ping;$var[m2]==pong;$var[m2]==ms]==true]
 https://raw.githubusercontent.com/Takashi-website/bdfd-mirastone/refs/heads/main/commands/utilidade/ping.ruby
 
